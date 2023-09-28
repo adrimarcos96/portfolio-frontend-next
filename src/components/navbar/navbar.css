@@ -1,0 +1,145 @@
+.type-writer-container {
+  transform: translate(-50%, 0);
+  z-index: 150;
+}
+
+.type-writer {
+  font-family: monospace;
+  color:#0000;
+  background:
+    linear-gradient(-90deg, white 2px,#0000 0) 5px 0,
+    linear-gradient(white 0 0) 0 0;
+  background-size:calc(var(--n)*1ch) 200%;
+  -webkit-background-clip:padding-box,text;
+  background-clip:padding-box,text;
+  background-repeat:no-repeat;
+  animation:
+    blink .7s infinite steps(1),
+    typing calc(var(--n)*.1s) steps(var(--n)) forwards;
+  opacity: 0;
+  animation-delay: 2s;
+}
+
+.squares li {
+  list-style: none;
+  position: absolute;
+  background: #ffffff4d;
+  /* background: #ffffff4d; */
+  animation: goingUp 10s linear infinite;
+  bottom: 0px;
+  opacity: 0;
+  z-index: 130;
+}
+
+.squares li:nth-child(1) {
+  animation-delay: 9s;
+  animation-duration: 10s;
+}
+
+.squares li:nth-child(2) {
+  animation-delay: 2s;
+  animation-duration: 7s;
+  background: #3e3e3e4d;
+}
+
+.squares li:nth-child(3) {
+  animation-delay: 2s;
+  animation-duration: 15s;
+  background: #5b4b954d;
+}
+
+.squares li:nth-child(4) {
+  animation-delay: 3s;
+  background: #06a5f46d;
+}
+
+.squares li:nth-child(5) {
+  animation-delay: 3s;
+  background: #3e3e3e6d;
+}
+
+.squares li:nth-child(6) {
+  animation-delay: 1s;
+  animation-duration: 7s;
+}
+
+.squares li:nth-child(7) {
+  animation-delay: 4s;
+  animation-duration: 9s;
+  background: #06a5f46d;
+}
+
+.squares li:nth-child(8) {
+  animation-delay: 1s;
+  background: #5b4b954d;
+}
+
+.squares li:nth-child(9) {
+  animation-delay: 4s;
+}
+
+.squares li:nth-child(10) {
+  animation-delay: 2s;
+  animation-duration: 7s;
+  background: #06a5f46d;
+}
+
+.squares li:nth-child(11) {
+  animation-delay: 6s;
+  animation-duration: 8s;
+  background: #3e3e3e7d;
+}
+
+.squares li:nth-child(12) {
+  animation-delay: 5s;
+  background: #5b4b953d;
+}
+
+.squares li:nth-child(13) {
+  animation-delay: 2s;
+  animation-duration: 15s;
+  background: #06a5f46d;
+}
+
+.squares li:nth-child(14) {
+  animation-delay: 4s;
+  animation-duration: 13s;
+}
+
+.squares li:nth-child(15) {
+  animation-delay: 2s;
+  animation-duration: 5s;
+  background: #06a5f4;
+}
+
+@keyframes typing {
+  from { background-size: 0 200% }
+  from { opacity: 1 1%; }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  50% { background-position: 0 -100%, 0 0 }
+}
+
+@keyframes goingUp {
+  0% {
+    transform: translateY(0) rotate(0);
+    border-radius: 2px;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-190px) rotate(720deg);
+    border-radius: 5px;
+    opacity: 0;
+    width: 20px;
+    height:20px;
+  }
+}
