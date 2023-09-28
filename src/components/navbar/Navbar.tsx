@@ -9,6 +9,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import profileImage from 'public/profile.png'
 import { navbarData } from '@/config/data'
+import { TextLengthCssPropery } from './TextLengthCssProperty'
 
 import './navbar.css'
 
@@ -19,7 +20,7 @@ export default function Example() {
     <header className="w-full bg-gradient-to-t from-slate-900 to-slate-700 t">
       <div className="mx-auto block max-w-7xl lg:justify-center justify-between p-6 lg:px-8 h-48 w-full">
         <div className="type-writer-container absolute w-full top-0.5 left-1/2 mt-16 px-6 lg:px-8 xl:text-center">
-          <span className="text-white type-writer text-lg md:text-4xl type-writer mx-auto delay-[3000ms]" style={{ '--n': navbarData.typeWriterText.length }}>
+          <span className="text-white type-writer text-lg md:text-4xl type-writer mx-auto delay-[3000ms]" style={{ '--textLength': navbarData.typeWriterText.length } as TextLengthCssPropery }>
             {navbarData.typeWriterText}
           </span>
         </div>
