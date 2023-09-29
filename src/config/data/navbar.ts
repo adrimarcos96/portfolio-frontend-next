@@ -1,6 +1,6 @@
 const links: { label: string; href: string }[] = [
   { label: 'Home', href: '/' },
-  { label: 'Experience', href: 'experience' },
+  { label: 'Experience', href: '/#' },
   { label: 'Projects', href: '/#' },
   { label: 'Contact me', href: '/#' }
 ]
