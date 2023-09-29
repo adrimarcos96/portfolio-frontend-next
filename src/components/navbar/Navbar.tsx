@@ -46,7 +46,7 @@ export default function Example() {
       </div>
     </header>
 
-    <div className="sticky top-0 w-screen bg-gradient-to-t from-black to-slate-900 lg:h-28 flex">
+    <div className="sticky top-0 w-full bg-gradient-to-t from-black to-slate-900 lg:h-28 flex">
       <nav className="w-full mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8 h-full" aria-label="Global">
         <div className="flex lg:flex-1 items-center">
           <Image className="absolute w-32 h-32 sm:w-40 sm:h-40 rounded-full top-3 max-[280px]:hidden" src={profileImage} alt="Logo" />
@@ -87,7 +87,7 @@ export default function Example() {
           </Dialog>
         </div>
 
-        {/* Mobile navbar*/}
+        {/* Desktop navbar*/}
         <div className="hidden lg:flex lg:gap-x-4 h-20">
           {navbarData.links.map((link) => (
             <Link key={link.label} href={link.href} className="text-xl leading-7 text-white px-4 h-full flex items-center hover:font-semibold">{link.label}</Link>
