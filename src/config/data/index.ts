@@ -1,5 +1,7 @@
-import { navbarData } from './navbar'
+import { navbarData } from './NavbarComponent'
+import { homePageData } from './homePage'
 
 export {
-  navbarData
+  navbarData,
+  homePageData
 }
