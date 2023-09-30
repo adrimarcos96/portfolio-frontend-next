@@ -12,8 +12,8 @@ const font = Roboto({
 
 export const metadata: Metadata = {
   title: 'Adrian Marcos',
-  description: 'My portafolio',
-  keywords:[ 'portafolio'],
+  description: 'My portfolio',
+  keywords:[ 'Adrian Marcos', 'portafolio', 'portfolio'],
   authors: { name: 'Adrian Marcos Quintana' },
   icons: {
     icon: '/favicon.svg'
