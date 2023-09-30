@@ -8,7 +8,7 @@ import {
 import Link from 'next/link'
 import Image from 'next/image'
 import profileImage from 'public/profile.png'
-import { navbarData } from '@/config/data'
+import { navbarData } from '@/config/data/NavbarComponent'
 import { TextLengthCssPropery } from './TextLengthCssProperty'
 
 import './navbar.css'
