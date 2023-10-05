@@ -1,4 +1,4 @@
-import { NavbarComponent } from '@/components'
+import { NavbarComponent, FooterComponent } from '@/components'
 import { Roboto } from 'next/font/google'
 import type { Metadata } from 'next'
 
@@ -28,6 +28,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main className="mx-auto">
           {children}
         </main>
+        <FooterComponent></FooterComponent>
       </body>
     </html>
   )
