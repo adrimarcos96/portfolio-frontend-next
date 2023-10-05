@@ -8,16 +8,16 @@ import {
 import Link from 'next/link'
 import Image from 'next/image'
 import profileImage from 'public/profile.png'
-import { navbarData } from '@/config/data/NavbarComponent'
+import { navbarData } from '@/config/data/navbarComponentData'
 import { TextLengthCssPropery } from './TextLengthCssProperty'
 
-import './navbar.css'
+import './navbarComponent.css'
 
-export default function Example() {
+export default function NavbarComponent() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (<>
-    <header className="w-full bg-gradient-to-t from-slate-900 to-slate-700 t">
+    <header className="w-full bg-gradient-to-t from-slate-900 to-slate-700">
       <div className="mx-auto block max-w-7xl lg:justify-center justify-between p-6 lg:px-8 h-48 w-full">
         <div className="absolute flex z-[120] max-w-7xl">
           {navbarData.socialMedia.map((social, index) => {

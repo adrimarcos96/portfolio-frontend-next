@@ -1,4 +1,4 @@
-import { homePageData } from '@/config/data/homePage'
+import { homePageData } from '@/config/data/homePageData'
 
 export default function Home() {
   return (

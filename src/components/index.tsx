@@ -1,5 +1,7 @@
-import NavbarComponent from './navbar/Navbar'
+import NavbarComponent from './navbar/navbarComponent'
+import FooterComponent from './footer/footerComponent'
 
 export {
-  NavbarComponent
+  NavbarComponent,
+  FooterComponent
 }

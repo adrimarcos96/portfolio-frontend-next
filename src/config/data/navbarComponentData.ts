@@ -1,5 +1,6 @@
 const socialMedia: { icon: string; alt: string; bgColor: string; href: string }[] = [
-  { icon: '/social-media/linkedin.svg', alt: 'LinkedIn', bgColor: '#0078d4', href: 'https://www.linkedin.com/in/adrian-marcos-quintana-44725b28a' }
+  { icon: '/social-media/linkedin.svg', alt: 'LinkedIn', bgColor: '#0078d4', href: 'https://www.linkedin.com/in/adrian-marcos-quintana-44725b28a' },
+  { icon: '/social-media/email.svg', alt: 'Email', bgColor: 'gray', href: 'mailto:adrimarcos1996@gmail.com' }
 ]
 
 const links: { label: string; href: string }[] = [
