@@ -19,7 +19,14 @@ export default function Example() {
   return (<>
     <header className="w-full bg-gradient-to-t from-slate-900 to-slate-700 t">
       <div className="mx-auto block max-w-7xl lg:justify-center justify-between p-6 lg:px-8 h-48 w-full">
-        <div className="type-writer-container absolute w-full top-0.5 left-1/2 mt-16 px-6 lg:px-8 xl:text-center">
+        <div className="absolute flex z-[120] max-w-7xl">
+          {navbarData.socialMedia.map((social, index) => {
+            return (<Link key={`social-media-${index}`} target="_blank" className="block w-10 h-10 max-md:w-8 max-md:h-8 rounded-[3px] mr-5" href={social.href}>
+              <Image src={social.icon} alt={social.alt} width={30} height={30} className="w-10 h-10 max-md:w-8 max-md:h-8 rounded p-1" style={{ backgroundColor: social.bgColor }} />
+            </Link>)
+          })}
+        </div>
+        <div className="type-writer-container absolute w-full top-0.5 left-1/2 mt-20 px-6 lg:px-8 xl:text-center">
           <span className="text-white type-writer text-lg md:text-4xl type-writer mx-auto delay-[3000ms]" style={{ '--textLength': navbarData.typeWriterText.length } as TextLengthCssPropery }>
             {navbarData.typeWriterText}
           </span>
