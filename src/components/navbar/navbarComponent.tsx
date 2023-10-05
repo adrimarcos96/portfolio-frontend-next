@@ -9,7 +9,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import profileImage from 'public/profile.png'
 import { navbarData } from '@/config/data/navbarComponentData'
-import { TextLengthCssPropery } from './textLengthCssProperty'
+import { TextLengthCssPropery } from './TextLengthCssProperty'
 
 import './navbarComponent.css'
 
