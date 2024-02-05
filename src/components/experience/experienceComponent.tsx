@@ -1,4 +1,4 @@
-import { SectionProps } from "@/models/props";
+import { SectionProps } from '@/models/props'
 
 export function ExperienceComponent({ title, texts }: SectionProps) {
   return (
